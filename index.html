@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Khinkali Workshop | Restaurant Fish & Wine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Khinkali Making Workshop</h1>
+            <p>Experience authentic Georgian tradition in Tbilisi</p>
+            <a href="#booking" class="btn">Book Your Spot</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Book</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About The Workshop</h2>
+            <p>
+                Join us at Restaurant Fish & Wine in the heart of Tbilisi for an unforgettable
+                hands-on khinkali experience. Learn how to prepare traditional Georgian dumplings
+                from scratch — from kneading the dough to perfectly folding 18 pleats.
+            </p>
+            <p>
+                Our workshops are intimate, warm and fun. You will enjoy local wine,
+                learn cultural stories, and receive your official Khinkali Certificate of Achievement.
+            </p>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Dough Preparation</h3>
+                    <p>Learn how to make traditional elastic dough using simple ingredients.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Filling Secrets</h3>
+                    <p>Prepare juicy meat filling with the perfect spice balance.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Folding Technique</h3>
+                    <p>Master the famous khinkali pleats and shaping technique.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Cooking & Tasting</h3>
+                    <p>Boil, serve, and enjoy your handmade khinkali with Georgian wine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Workshop Moments</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1604909053191-2f20b6f0c9d0" alt="Khinkali making">
+                <img src="https://images.unsplash.com/photo-1604908177225-4d70c7e76aa1" alt="Georgian food">
+                <img src="https://images.unsplash.com/photo-1604908177335-d30d49bca7ff" alt="Dough preparation">
+                <img src="https://images.unsplash.com/photo-1604909053083-47f4e5e5dca7" alt="Khinkali close up">
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <h2>Reserve Your Khinkali Experience</h2>
+
+            <form id="bookingForm">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+
+                <select name="date" required>
+                    <option value="">Select Date</option>
+                    <option>March 12 - 17:00</option>
+                    <option>March 15 - 19:00</option>
+                    <option>March 20 - 18:00</option>
+                </select>
+
+                <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+
+                <textarea name="message" placeholder="Special requests (optional)" rows="4"></textarea>
+
+                <button type="submit" class="btn">Send Booking Request</button>
+            </form>
+
+            <p id="formMessage" style="margin-top:20px; display:none; color:green;">
+                ✅ Thank you! We received your booking request and will contact you shortly.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Restaurant Fish & Wine | Tbilisi, Georgia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
