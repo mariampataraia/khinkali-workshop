@@ -2,12 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    /* font-family: 'Segoe UI', sans-serif; */
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 1px;
 }
 
 .container {
@@ -18,8 +26,8 @@ body {
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('https://images.unsplash.com/photo-1604909053083-47f4e5e5dca7') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.222), rgba(0, 0, 0, 0.277)),
+        url('pics/khinkali-row.jpeg') center/cover;
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -37,12 +45,13 @@ header p {
 
 nav {
     background: #7a1f1f;
-    padding: 15px;
+    padding: 15px 0;
+    position: relative;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    gap: 30px;
     list-style: none;
 }
 
@@ -55,6 +64,29 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+}
+
+.burger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
 
 section {
     background: #f9f9f9;
@@ -126,9 +158,10 @@ select {
 }
 
 footer {
+    font-size: 0.8rem;
     text-align: center;
     padding: 20px;
-    background: #111;
+    background: #59505000;
     color: white;
 }
 
@@ -139,5 +172,26 @@ footer {
 @media(max-width:768px) {
     header h1 {
         font-size: 32px;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #7a1f1f;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none !important;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
     }
 }
