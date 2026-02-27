@@ -74,6 +74,10 @@ nav a {
     margin: auto;
 }
 
+.navbar-nav a {
+    color: white;
+}
+
 .logo {
     color: white;
     font-weight: 600;
